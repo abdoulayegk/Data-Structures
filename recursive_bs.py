@@ -2,6 +2,7 @@
 
 def recursive_bs(array,target,low,high):
     while(low <= high):
+        # the // will leave remainder as zero if you don't use it then you may run into error
         mid = (low+high )//2
         if (target == array[mid]):
             return array[mid]
