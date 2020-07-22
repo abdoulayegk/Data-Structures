@@ -14,9 +14,10 @@ def recursive_bs(array,target,low,high):
 
 #arr = [12,14,17,18,19,22,25,28,30]
 #print(recursive_bs(arr,1,0,len(arr)))
-n=int(input("Enter the number of elements in your list:\n"))
+# another way to take the input from the user
+num = int(input("Enter the number of elements in your list:\n"))
 array = []
-for i in range(n):
+for i in range(num):
     array.append(int(input('Enter the element into your array:\n')))
 
 array.sort()
