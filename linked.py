@@ -1,5 +1,5 @@
 class Node:
-    def __init__(self,data):
+    def __init__(self, data):
         self.data = data
         self.next = None
 
@@ -7,7 +7,8 @@ class Node:
 class LinkedList:
     def __init__(self):
         self.head = None
-    def insert_end(self,data):
+
+    def insert_end(self, data):
         New_node = Node(data)
         if self.head is None:
             self.head = New_node
@@ -16,7 +17,8 @@ class LinkedList:
         while temp.next:
             temp = temp.next
         temp.next = New_node
-    def insert_first(self,data):
+
+    def insert_first(self, data):
         New_node = Node(data)
 
         New_node.next = self.head
@@ -25,7 +27,11 @@ class LinkedList:
     def display(self):
         temp = self.head
         while temp:
-            print(temp.data,'-->', end = ' ',)
+            print(
+                temp.data,
+                "-->",
+                end=" ",
+            )
             temp = temp.next
 
 
